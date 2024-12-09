@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inauguración "Explora el Futuro" - Mediateca Inmersiva</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #000428, #004e92);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 40px 30px;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            z-index: 2;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #0ff;
+            font-size: 3rem;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+            animation: glitch 1s infinite;
+        }
+
+        h2 {
+            color: #0f0;
+            font-size: 2rem;
+            text-shadow: 0 0 10px #0f0;
+            animation: bounce 1s infinite;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            color: #0ff;
+            text-shadow: 0 0 5px #0ff;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0ff;
+            color: black;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: #0f0;
+            box-shadow: 0 0 15px #0ff;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: none; }
+            50% { transform: skew(-2deg, -2deg); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Inauguración</h1>
+        <h2>"Explora el Futuro"</h2>
+
+        <div class="section">
+            <strong>Bienvenida Virtual</strong><br>
+            ¡Recibe tu dispositivo de realidad aumentada al llegar!
+        </div>
+
+        <div class="section">
+            <strong>Recorrido Inmersivo</strong><br>
+            Explora la mediateca con un tour interactivo único.
+        </div>
+
+        <div class="section">
+            <strong>Espectáculo en Vivo</strong><br>
+            Participa en una performance con realidad aumentada.
+        </div>
+
+        <a href="#" class="button">Regístrate Aquí</a>
+
+        <div class="section">
+            <small>15.12.2045 | 20:45 UTC | Nodo Virtual Z-743</small>
+        </div>
+    </div>
+
+</body>
+</html>
